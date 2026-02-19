@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Técnico | Automatización y Robótica Industrial</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f1115;
+    color: #e4e4e4;
+    line-height: 1.6;
+}
+
+header {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #0f1115 0%, #1b1f27 100%);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 20px;
+    color: #b0b3b8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: #0f1115;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #00e5ff;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #1b1f27;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 1px solid #222831;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00bcd4;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #1b1f27;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #222831;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #0a0c10;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.highlight {
+    color: #00bcd4;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Nombre Apellido</h1>
+    <p>Técnico Junior en <span class="highlight">Automatización y Robótica Industrial</span> con formación en Ingeniería Electrónica y experiencia en diseño electromecánico, sistemas neumáticos y robótica háptica.</p>
+    <a href="#proyectos" class="button">Ver Proyectos</a>
+</header>
+
+<section>
+    <h2>Sobre mí</h2>
+    <p>
+        Estudiante de Ingeniería Electrónica y Automática (hasta segundo curso) en la Universidad Miguel Hernández,
+        actualmente cursando FP en Automatización y Robótica Industrial. 
+        Orientado al diseño, integración y control de sistemas industriales.
+        Interesado en automatización avanzada, robótica colaborativa y tecnologías de Industria 4.0.
+    </p>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos Técnicos</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Exoesqueleto con Refuerzo Neumático</h3>
+            <p>
+                Diseño y desarrollo de un sistema mecánico asistido por actuadores neumáticos.
+                Integración estructural, análisis de cargas y optimización de movimiento.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Motor Eléctrico Diseñado desde Cero</h3>
+            <p>
+                Desarrollo completo de un motor eléctrico: diseño del rotor y estator,
+                bobinado, análisis electromagnético y pruebas funcionales.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Avatar Háptico de Brazo Robótico</h3>
+            <p>
+                Sistema de control y retroalimentación háptica para manipulación remota.
+                Programación y sincronización entre interfaz y actuadores.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Formación</h2>
+    <p>
+        • Ingeniería Electrónica y Automática (2º curso)  
+        • FP Automatización y Robótica Industrial  
+        • Formación en sistemas eléctricos, neumática, control industrial y electrónica aplicada
+    </p>
+</section>
+
+<section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills">
+        <div class="skill">Automatización Industrial</div>
+        <div class="skill">Neumática</div>
+        <div class="skill">Electrónica Analógica y Digital</div>
+        <div class="skill">Diseño Electromecánico</div>
+        <div class="skill">Control de Sistemas</div>
+        <div class="skill">Robótica Industrial</div>
+        <div class="skill">Programación</div>
+        <div class="skill">CAD</div>
+    </div>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p>Email: tuemail@email.com</p>
+    <p>LinkedIn: linkedin.com/in/tuperfil</p>
+    <p>GitHub: github.com/tuusuario</p>
+</section>
+
+<footer>
+    © 2026 - Portfolio Técnico | Automatización y Robótica Industrial
+</footer>
+
+</body>
+</html>
+
