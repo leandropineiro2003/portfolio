@@ -114,17 +114,74 @@ footer {
 .highlight {
     color: #00bcd4;
 }
+    .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-image {
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    box-shadow: 0 0 25px rgba(0, 188, 212, 0.3);
+    transition: 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-bottom: 30px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
 <header class="hero">
-    <h1>Leandro Pineiro</h1>
-    <p>Técnico Junior en <span class="highlight">Automatización y Robótica Industrial</span> con formación en Ingeniería Electrónica y experiencia en diseño electromecánico, sistemas neumáticos y robótica háptica.</p>
-    <a href="#proyectos" class="button">Ver Proyectos</a>
-</header>
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Leandro Pineiro</h1>
+            <p>
+                Técnico Junior en <span class="highlight">Automatización y Robótica Industrial</span> 
+                con formación en Ingeniería Electrónica y experiencia en diseño electromecánico, 
+                sistemas neumáticos y robótica háptica.
+            </p>
+            <a href="#proyectos" class="button">Ver Proyectos</a>
+        </div>
 
+        <div class="hero-image">
+            <img src="FotoPerfilLeandroPineiro.png" alt="Foto de perfil Leandro Piñeiro">
+        </div>
+    </div>
+</header>
 <section>
     <h2>Sobre mí</h2>
     <p>
